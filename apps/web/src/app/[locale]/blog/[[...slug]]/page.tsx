@@ -1,7 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import { notFound } from 'next/navigation'
 
 import '@/styles/mdx.css'
 
@@ -147,8 +146,6 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function BlogPage(props: BlogPageProps) {
-  notFound()
-
   const params = await props.params
   const locale = params.locale || defaultLocale
 
@@ -188,7 +185,8 @@ export default async function BlogPage(props: BlogPageProps) {
     )
   }
 
-  const toc = await getTableOfContents(blogPost.body.raw)
+  const post = blogPost
+  const toc = await getTableOfContents(post.body.raw)
 
   return (
     <main className="relative space-y-12 lg:gap-10 lg:grid lg:grid-cols-[1fr_250px]">
@@ -197,7 +195,7 @@ export default async function BlogPage(props: BlogPageProps) {
           messages={{
             posts: t('blog.words.posts'),
           }}
-          post={blogPost}
+          post={post}
         />
 
         <BlogPostHeading
@@ -206,16 +204,16 @@ export default async function BlogPage(props: BlogPageProps) {
             by: t('blog.words.by'),
             min_read: t('blog.cards.min_read'),
           }}
-          post={blogPost}
+          post={post}
         />
 
-        <BlogPostTags post={blogPost} />
+        <BlogPostTags post={post} />
 
         <div className="pb-12 pt-8">
-          <Mdx code={blogPost.body.code} />
+          <Mdx code={post.body.code} />
         </div>
 
-        <AuthorCard post={blogPost} />
+        <AuthorCard post={post} />
       </div>
 
       <div className="hidden text-sm lg:block">
@@ -228,7 +226,7 @@ export default async function BlogPage(props: BlogPageProps) {
                   editPageOnGitHub: t('docs.edit_page_on_github'),
                   startDiscussionOnGitHub: t('docs.start_discussion_on_github'),
                 }}
-                sourceFilePath={blogPost._raw.sourceFilePath}
+                sourceFilePath={post._raw.sourceFilePath}
                 toc={toc}
               />
             </div>

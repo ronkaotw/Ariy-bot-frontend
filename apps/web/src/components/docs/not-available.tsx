@@ -12,6 +12,7 @@ const messages = {
   nl: 'Deze inhoud is nog niet beschikbaar in uw taal',
   pl: 'Ten zasób nie jest jeszcze dostępny w twoim języku',
   ru: 'Этот контент пока не доступен на вашем языке',
+  'zh-tw': '此內容尚未提供繁體中文版',
   zh: '此内容尚未提供您的语言版本',
 } as const
 
@@ -23,10 +24,11 @@ type Props = {
 
 export function DocNotAvailableInThisLanguage({ locale }: Props) {
   const message = messages?.[locale as Locales]
+  const fallbackMessage = messages[defaultLocale]
 
   return (
     <div className="rounded-md border border-amber-600/50 bg-amber-800/70 p-4">
-      ⚠️ {message || messages[defaultLocale]}.
+      ⚠️ {message || fallbackMessage}.
     </div>
   )
 }

@@ -24,8 +24,8 @@ export const blogConfig: BlogConfig = {
       email: 'daltonmenezes@outlook.com',
 
       bio: {
+        'zh-tw': '軟體工程師 | 作家 | 設計師',
         en: 'Software Engineer | Writer | Designer',
-        pt: 'Engenheiro de Software | Escritor | Designer',
       },
 
       social: {
