@@ -1,7 +1,7 @@
 {
   "site": {
-    "heading": "for your projects easily",
-    "description": "Beautifully designed template that you can use for your projects for free. Accessible. Customizable. Open Source.",
+    "heading": "instant airport weather insights",
+    "description": "Airy Airport Bot helps you quickly check airport info and aviation weather reports, including METAR, TAF, and AIRMET.",
     "announcement": "Introducing Ariy",
     "changelog": "Changelog",
 
@@ -20,24 +20,19 @@
 
     "featured_cards": {
       "nextjs": {
-        "description": "Built with Next.js using app router."
+        "description": "Lookup airport details by ICAO code in seconds."
       },
 
       "shadcn": {
-        "description": "Built on top of Shadcn (site/components)."
+        "description": "Get real-time METAR reports for current airport weather."
       },
 
       "tailwind": {
-        "description": "Styled with Tailwind CSS."
+        "description": "Check TAF forecasts to plan upcoming flight conditions."
       },
 
       "i18n": {
-        "description": "Internationalization support with next-intl."
-      },
-
-      "more": {
-        "title": "and more!",
-        "description": "Many more features to use like documents and blog posts using MDX, dark and white mode, search command palette, internationalized sitemap and more..."
+        "description": "Monitor AIRMET advisories for regional weather hazards."
       }
     },
 

@@ -10,7 +10,6 @@ import {
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import type { LocaleOptions } from '@/lib/opendocs/types/i18n'
 import { FeaturedCard } from '@/components/featured-card'
-import { Announcement } from '@/components/announcement'
 import { buttonVariants } from '@/components/ui/button'
 import { FlipWords } from '@/components/ui/flip-words'
 import { Vortex } from '@/components/vortex'
@@ -36,12 +35,10 @@ export default async function IndexPage(props: {
   return (
     <div className="container relative">
       <PageHeader>
-        <Announcement href="/docs" title={t('announcement')} />
-
         <PageHeaderHeading>
           <FlipWords
             className="text-9xl -z-10"
-            words={['site', 'blog', 'docs']}
+            words={['METAR', 'TAF', 'AIRMET']}
           />
 
           <TextGenerateEffect words={t('heading')} />
@@ -82,35 +79,28 @@ export default async function IndexPage(props: {
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 2xl:grid-cols-4">
           <FeaturedCard
             description={t('featured_cards.nextjs.description')}
-            icon="🧬"
-            title="Next.js"
+            icon="🛫"
+            title="Airport Info"
           />
 
           <FeaturedCard
             description={t('featured_cards.shadcn.description')}
-            icon="⚡️"
-            title="Shadcn"
+            icon="🌤️"
+            title="METAR"
           />
 
           <FeaturedCard
             description={t('featured_cards.tailwind.description')}
-            icon="🚀"
-            title="Tailwind"
+            icon="📈"
+            title="TAF"
           />
 
           <FeaturedCard
             description={t('featured_cards.i18n.description')}
-            icon="🌍"
-            title="i18n"
+            icon="⚠️"
+            title="AIRMET"
           />
         </div>
-
-        <FeaturedCard
-          description={t('featured_cards.more.description')}
-          icon="+"
-          orientation="horizontal"
-          title={t('featured_cards.more.title')}
-        />
       </section>
     </div>
   )

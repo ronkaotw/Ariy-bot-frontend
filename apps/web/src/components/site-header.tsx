@@ -58,11 +58,7 @@ export async function SiteHeader() {
           </div>
 
           <nav className="flex items-center">
-            <VersionDropdown
-              messages={{
-                changelog: t('changelog'),
-              }}
-            />
+            <VersionDropdown />
 
             <I18nToggle
               messages={{
