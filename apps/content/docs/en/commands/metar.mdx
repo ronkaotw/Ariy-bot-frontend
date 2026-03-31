@@ -1,0 +1,50 @@
+---
+title: /metar
+description: Retrieve the latest METAR weather observation for an airport by ICAO code.
+---
+
+The `/metar` command fetches the most recent **METAR** (Meteorological Aerodrome Report) for a given airport.
+METAR is the standard format for reporting current surface weather conditions at an airport.
+
+## Usage
+
+```
+/metar <ICAO>
+```
+
+| Parameter | Type   | Required | Description                                  |
+| --------- | ------ | -------- | -------------------------------------------- |
+| `ICAO`    | string | Yes      | 4-letter ICAO airport code (e.g. `RCTP`)     |
+
+## Response
+
+The bot returns:
+
+- **Raw METAR string** — the official encoded report as published
+- **Decoded summary** — human-readable breakdown including:
+  - Wind direction and speed
+  - Visibility
+  - Weather phenomena (rain, fog, thunderstorm, etc.)
+  - Cloud layers and sky condition
+  - Temperature and dewpoint
+  - Altimeter setting (QNH)
+  - Report timestamp (UTC)
+
+## Example
+
+```
+/metar RCTP
+```
+
+**Response:**
+
+```
+mETAR: METAR RCTP 311230Z VRB01KT 9999 FEW010 SCT015 BKN020 23/22 Q1010 NOSIG RMK A2984
+```
+
+## Notes
+
+- METARs are typically issued **every 30 or 60 minutes**.
+- The report reflects real-time conditions — always check the timestamp for freshness.
+- Not all airports publish METAR data; smaller aerodromes may return no result.
+- Time is always reported in **UTC (Zulu time)**.

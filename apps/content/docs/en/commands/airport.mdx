@@ -1,0 +1,45 @@
+---
+title: /airport
+description: Query airport details by ICAO code, including name, location, elevation, type, and timezone.
+---
+
+The `/airport` command retrieves detailed information about an airport using its 4-letter ICAO identifier.
+
+## Usage
+
+```
+/airport <ICAO>
+```
+
+| Parameter | Type   | Required | Description                                  |
+| --------- | ------ | -------- | -------------------------------------------- |
+| `ICAO`    | string | Yes      | 4-letter ICAO airport code (e.g. `RCTP`)     |
+
+## Response
+
+The bot returns a summary that includes:
+
+- Airport name and IATA code
+- City and country
+- Coordinates (latitude / longitude)
+- Elevation (feet above MSL)
+- Airport type (large / medium / small / heliport)
+- Timezone
+
+## Example
+
+```
+/airport RCTP
+```
+
+**Response:**
+
+```
+查詢到的機場為: RCTP - 機場名稱: Taiwan Taoyuan International Airport - 城市名稱: Taoyuan
+```
+
+## Notes
+
+- ICAO codes are **4 characters** long (e.g. `RCTP`, `VHHH`, `RJTT`, `KLAX`).
+- IATA codes (3 letters, e.g. `TPE`) are **not** accepted — always use the ICAO code.
+- If the airport is not found, the bot will return a not-found message.

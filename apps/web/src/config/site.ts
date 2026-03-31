@@ -1,5 +1,5 @@
 import en from '@/i18n/locales/en.json'
-import pt from '@/i18n/locales/pt.json'
+import zhTw from '@/i18n/locales/zh-tw.json'
 import { absoluteUrl } from '@/lib/utils'
 
 export const siteConfig = {
@@ -7,7 +7,7 @@ export const siteConfig = {
 
   description: {
     en: en.site.description,
-    pt: pt.site.description,
+    'zh-tw': zhTw.site.description,
   },
 
   url: process.env.NEXT_PUBLIC_APP_URL,

@@ -77,23 +77,7 @@ function DefaultTableOfContentItems({
   messages,
   sourceFilePath,
 }: DefaultTableOfContentItemsProps) {
-  return (
-    <div className="mt-2 flex flex-col gap-1">
-      <a
-        className="text-muted-foreground hover:text-foreground flex items-center gap-2 transition"
-        href={`${siteConfig.links.github.url}/edit/main/apps/content/${sourceFilePath}`}
-      >
-        {messages.editPageOnGitHub} <ExternalLink size={12} />
-      </a>
-
-      <a
-        className="text-muted-foreground hover:text-foreground flex items-center gap-2 transition"
-        href={`${siteConfig.links.github.url}/discussions/new/choose`}
-      >
-        {messages.startDiscussionOnGitHub} <ExternalLink size={12} />
-      </a>
-    </div>
-  )
+  return null
 }
 
 function useActiveItem(itemIds: string[]) {

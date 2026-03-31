@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "run-p contentlayer:dev next:dev",
+    "next:dev": "next dev",
+    "contentlayer:dev": "contentlayer2 dev",
     "build": "run-s contentlayer:build next:build",
     "start": "next start",
     "lint": "biome check --no-errors-on-unmatched .",

@@ -1,0 +1,91 @@
+{
+  "site": {
+    "heading": "即時機場天氣查詢",
+    "description": "Airy Airport Bot 可幫助您快速查詢機場資訊及航空天氣報告，包含 METAR、TAF 和 AIRMET。",
+    "announcement": "推出 Ariy",
+    "changelog": "更新日誌",
+
+    "buttons": {
+      "get_started": "開始使用",
+      "toggle_menu": "切換選單",
+      "toggle_language": "切換語言",
+      "deploy_vercel": "部署至 Vercel"
+    },
+
+    "words": {
+      "menu": "選單",
+      "docs": "文件",
+      "blog": "部落格"
+    },
+
+    "featured_cards": {
+      "nextjs": {
+        "description": "透過 ICAO 代碼即時查詢機場詳細資訊。"
+      },
+
+      "shadcn": {
+        "description": "取得即時 METAR 報告，掌握當前機場天氣。"
+      },
+
+      "tailwind": {
+        "description": "查詢 TAF 預報，規劃即將到來的飛行條件。"
+      },
+
+      "i18n": {
+        "description": "監看 AIRMET 公告，掌握區域天氣危害。"
+      }
+    },
+
+    "footer": {
+        "created_by": "© Copyright All rights reserved. 由"
+    },
+
+    "search": {
+      "search": "搜尋",
+      "no_results_found": "找不到結果",
+      "search_documentation": "搜尋說明文件",
+      "type_command_or_search": "輸入指令或搜尋"
+    },
+
+    "themes": {
+      "theme": "主題",
+      "dark": "深色",
+      "light": "淺色",
+      "system": "系統預設"
+    }
+  },
+
+  "docs": {
+    "on_this_page": "本頁目錄",
+    "edit_page_on_github": "在 GitHub 上編輯此頁",
+    "start_discussion_on_github": "在 GitHub 上發起討論",
+    "api_reference": "API 參考",
+    "docs": "文件",
+    "source": "原始碼",
+
+    "not_found": {
+      "description": "您查詢的文件不存在。",
+      "title": "找不到文件"
+    }
+  },
+
+  "blog": {
+    "words": {
+      "posts": "文章",
+      "by": "作者"
+    },
+
+    "cards": {
+      "min_read": "分鐘閱讀"
+    },
+
+    "buttons": {
+      "next": "下一篇",
+      "previous": "上一篇",
+      "rss_feed": "RSS 訂閱",
+      "read_more": "閱讀更多",
+      "go_to_next_page": "前往下一頁",
+      "go_to_previous_page": "前往上一頁"
+    }
+  }
+}

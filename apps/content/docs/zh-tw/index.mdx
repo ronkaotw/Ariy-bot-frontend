@@ -1,0 +1,29 @@
+---
+title: 總覽
+description: Airy Airport Bot 說明文件，支援 ICAO 機場查詢及 METAR、TAF、AIRMET 航空天氣報告，適用於 Telegram 與 LINE。
+---
+
+**Ariy Bot** 是一款航空天氣查詢助手，專為快速查詢機場資訊與氣象報告而設計。
+您可以直接在聊天室中查詢機場資料與最新天氣報告。
+
+本 Bot 同時支援 Telegram 與 LINE，使用相同的指令流程。
+
+## 功能特色
+
+- **機場查詢**：透過 ICAO 代碼搜尋機場詳細資訊。
+- **METAR**：取得最新的機場天氣實況報告。
+- **TAF**：查詢短期天氣預報。
+- **AIRMET**：監看區域氣象危害公告。
+- **跨平台支援**：在 Telegram 與 LINE 上使用相同指令。
+
+## 指令列表
+
+| 指令 | 說明 |
+| ---- | ---- |
+| [`/start`](/docs/commands/start) | 顯示使用說明與可用指令列表 |
+| [`/airport <ICAO>`](/docs/commands/airport) | 查詢機場資訊 |
+| [`/metar <ICAO>`](/docs/commands/metar) | 取得最新 METAR 天氣實況 |
+| [`/taf <ICAO>`](/docs/commands/taf) | 取得 TAF 機場天氣預報 |
+| [`/airmet <ICAO>`](/docs/commands/airmet) | 取得區域 AIRMET 公告 *(目前不可用)* |
+
+範例：`/metar RCTP`

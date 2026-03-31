@@ -1,0 +1,53 @@
+---
+title: /taf
+description: Retrieve the Terminal Aerodrome Forecast (TAF) for an airport by ICAO code.
+---
+
+The `/taf` command fetches the latest **TAF** (Terminal Aerodrome Forecast) for a given airport.
+TAF is the standard aviation weather forecast covering a 24 to 30-hour window around a specific aerodrome.
+
+## Usage
+
+```
+/taf <ICAO>
+```
+
+| Parameter | Type   | Required | Description                                  |
+| --------- | ------ | -------- | -------------------------------------------- |
+| `ICAO`    | string | Yes      | 4-letter ICAO airport code (e.g. `RCTP`)     |
+
+## Response
+
+The bot returns:
+
+- **Raw TAF string** — the official encoded forecast as published
+- **Decoded breakdown** — forecast periods with expected conditions including:
+  - Valid period (start and end times in UTC)
+  - Forecast wind direction and speed
+  - Expected visibility
+  - Weather phenomena
+  - Cloud layers and sky condition
+  - TEMPO / BECMG / PROB change groups (if present)
+
+## Example
+
+```
+/taf RCTP
+```
+
+**Response:**
+
+```
+TAF: TAF RCTP 311100Z 3112/0118 24010KT 7000 SCT007 BKN011 TEMPO 3112/3116 30005KT FEW012 BKN032 BECMG 3116/3118 01012KT TEMPO 3118/3124 33010KT 4000 SHRA SCT005 BKN008 FEW015CB TEMPO 0100/0104 31012G22KT 3000 TSRA SCT004 BKN006 FEW012CB TEMPO 0104/0107 04010KT FEW010 BKN018 BECMG 0107/0109 07007KT 9999 FEW015 BKN032
+```
+
+## Notes
+
+- TAF valid periods typically span **24 hours** (some major airports issue 30-hour TAFs).
+- TAFs are reissued approximately **every 6 hours** by the issuing meteorological office.
+- Change indicators:
+  - **TEMPO** — temporary fluctuations lasting less than 1 hour at a time
+  - **BECMG** — a gradual, permanent change expected within the period
+  - **PROB30 / PROB40** — probability of the described conditions occurring
+- Time is always in **UTC (Zulu time)**.
+- Not all airports issue TAF; smaller aerodromes may return no result.

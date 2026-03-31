@@ -1,0 +1,41 @@
+---
+title: /start
+description: Display the Ariy Bot welcome message and a complete list of available commands.
+---
+
+The `/start` command sends a welcome message along with a full list of available commands and their usage.
+It is typically the first command you send when starting a new chat with the bot.
+
+## Usage
+
+```
+/start
+```
+
+This command accepts no parameters.
+
+## Response
+
+The bot replies with:
+
+- A greeting message
+- A list of all supported commands with brief descriptions
+
+## Example
+
+Send `/start` in Telegram or LINE, and the bot responds with something like:
+
+```
+哈囉！歡迎使用機師天氣查詢系統！
+ 以下是所有指令的使用表格：
+ /airport ICAO
+ /metar ICAO
+ /taf ICAO
+ /airmet ICAO
+ /dev 取得開發人員資料
+```
+
+## Notes
+
+- Works on both **Telegram** and **LINE**.
+- Re-sending `/start` at any time will display the help message again.

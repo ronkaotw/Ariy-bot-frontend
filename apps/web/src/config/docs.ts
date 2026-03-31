@@ -16,7 +16,7 @@ export const docsConfig: DocsConfig = {
 
       title: {
         en: 'Documentation',
-        pt: 'Documentação',
+        'zh-tw': '文件',
       },
     },
   ],
@@ -24,8 +24,8 @@ export const docsConfig: DocsConfig = {
   sidebarNav: [
     {
       title: {
-        en: 'Getting Started',
-        pt: 'Começando',
+        en: 'Airy Bot Guide',
+        'zh-tw': 'Airy Bot 指南',
       },
 
       items: [
@@ -33,82 +33,72 @@ export const docsConfig: DocsConfig = {
           href: '/docs',
 
           title: {
-            en: 'Introduction',
-            pt: 'Introdução',
+            en: 'Overview',
+            'zh-tw': '總覽',
+          },
+
+          items: [],
+        },
+      ],
+    },
+
+    {
+      title: {
+        en: 'Commands',
+        'zh-tw': '指令',
+      },
+
+      items: [
+        {
+          href: '/docs/commands/start',
+
+          title: {
+            en: '/start',
+            'zh-tw': '/start',
           },
 
           items: [],
         },
 
         {
-          href: '/docs/adding-new-docs',
+          href: '/docs/commands/airport',
 
           title: {
-            en: 'Adding new docs',
-            pt: 'Adicionando novos documentos',
+            en: '/airport',
+            'zh-tw': '/airport',
           },
 
           items: [],
         },
 
         {
-          href: '/docs/customizing',
+          href: '/docs/commands/metar',
 
           title: {
-            en: 'Customizing',
-            pt: 'Personalizando',
+            en: '/metar',
+            'zh-tw': '/metar',
           },
 
           items: [],
         },
 
         {
+          href: '/docs/commands/taf',
+
           title: {
-            en: 'MDX',
+            en: '/taf',
+            'zh-tw': '/taf',
           },
 
-          items: [
-            {
-              href: '/docs/mdx/frontmatter',
-
-              title: {
-                en: 'Frontmatter',
-                pt: 'Cabeçalho de metadados',
-              },
-
-              items: [],
-            },
-
-            {
-              href: '/docs/mdx/code',
-
-              title: {
-                en: 'Code',
-                pt: 'Código',
-              },
-
-              items: [],
-            },
-
-            {
-              href: '/docs/mdx/components',
-
-              title: {
-                en: 'Components',
-                pt: 'Componentes',
-              },
-
-              items: [],
-            },
-          ],
+          items: [],
         },
 
         {
-          href: '/docs/changelog',
+          href: '/docs/commands/airmet',
 
           title: {
-            en: 'Changelog',
-            pt: 'Histórico de alterações',
+            en: '/airmet',
+            'zh-tw': '/airmet',
           },
 
           items: [],
