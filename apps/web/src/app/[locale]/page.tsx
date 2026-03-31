@@ -8,7 +8,6 @@ import {
 } from '@/components/page-header'
 
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
-import { InstallationBox } from '@/components/installation-box'
 import type { LocaleOptions } from '@/lib/opendocs/types/i18n'
 import { FeaturedCard } from '@/components/featured-card'
 import { Announcement } from '@/components/announcement'
@@ -65,26 +64,7 @@ export default async function IndexPage(props: {
             <Icons.gitHub className="mr-2 size-4" />
             {siteConfig.links.github.label}
           </Link>
-
-          <Link
-            className={cn(
-              buttonVariants({ variant: 'outline' }),
-              'flex gap-2 group'
-            )}
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdaltonmenezes%2Fopendocs&project-name=my-opendocs&repository-name=my-opendocs&demo-title=OpenDocs&demo-description=Next.js%20beautifully%20designed%20template%20that%20you%20can%20use%20for%20your%20projects%20for%20free%20with%20site%2C%20blog%20and%20docs%20support.%20Accessible.%20Customizable.%20Open%20Source%20with%20i18n%20support.&demo-url=https%3A%2F%2Fopendocs.daltonmenezes.com%2F&root-directory=apps%2Fweb"
-            target="_blank"
-          >
-            <span className="pr-3 mr-1 border border-transparent border-r-border group-hover:border-r-black/50">
-              ▲
-            </span>
-            {t('buttons.deploy_vercel')}
-          </Link>
         </PageActions>
-
-        <InstallationBox
-          __rawString__="npx degit daltonmenezes/opendocs project_name"
-          className="w-full relative max-w-140 flex flex-wrap items-center pl-4! pr-12!"
-        />
 
         <div className="fixed left-0 -top-40 size-full -z-10 overflow-hidden">
           <Vortex

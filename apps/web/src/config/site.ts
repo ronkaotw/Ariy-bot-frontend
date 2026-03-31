@@ -3,7 +3,7 @@ import pt from '@/i18n/locales/pt.json'
 import { absoluteUrl } from '@/lib/utils'
 
 export const siteConfig = {
-  name: 'opendocs',
+  name: 'Ariy',
 
   description: {
     en: en.site.description,
@@ -33,13 +33,13 @@ export const siteConfig = {
   links: {
     twitter: {
       label: 'Twitter',
-      username: '@daltonmenezes',
-      url: 'https://twitter.com/daltonmenezes',
+      username: '@kao821699',
+      url: 'https://x.com/kao821699',
     },
 
     github: {
       label: 'GitHub',
-      url: 'https://github.com/daltonmenezes/opendocs',
+      url: 'https://github.com/ronkaotw/Airy-Bot',
     },
   },
 } as const

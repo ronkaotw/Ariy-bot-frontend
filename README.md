@@ -1,9 +1,9 @@
-# opendocs
+# Ariy
 
 > Next.js beautifully designed template that you can use for your projects for free with site, blog and docs support. Accessible. Customizable. Open Source.
 
 <p align="center">
-  <a href="#opendocs">
+  <a href="#ariy">
     <img alt="preview" src="./apps/web/public/og.jpg" width="100%">
   </a>
 </p>
@@ -27,18 +27,8 @@
   </a>
 </p>
 
-<p align="center">
-  <!-- Deploy to Vercel -->
-    <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdaltonmenezes%2Fopendocs&project-name=my-opendocs&repository-name=my-opendocs&demo-title=OpenDocs&demo-description=Next.js%20beautifully%20designed%20template%20that%20you%20can%20use%20for%20your%20projects%20for%20free%20with%20site%2C%20blog%20and%20docs%20support.%20Accessible.%20Customizable.%20Open%20Source%20with%20i18n%20support.&demo-url=https%3A%2F%2Fopendocs.daltonmenezes.com%2F&root-directory=apps%2Fweb">
-    <img alt="deploy to vercel" src="https://vercel.com/button"/>
-  </a>
-</p>
-
 ### 🐑 Installation
 
-```bash
-npx degit daltonmenezes/opendocs project_name
-```
 ```bash
 cd project_name
 pnpm install
