@@ -17,7 +17,10 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**"
-      ]
+      ],
+      "build": {
+        "outputs": [".next/**", "!.next/cache/**"]
+      }
     },
     "build": {
       "dependsOn": [
